@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.maptiler.com/mapbox-gl-js/v1.5.1/mapbox-gl.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"   rel="stylesheet">
+    <link rel="stylesheet" href="leaflet.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+<div class="container-fluid" style="height: 63px;">
+  <nav class="navbar fixed-top p-0" style="border-bottom: 1px solid #dce1e2;  background-color: #fff;">
+    <div class="navbar-brand mx-auto py-2"><img class="logo" src="corona-virus.svg"> Covid-19<span> Status Tracker</span></div>
+</nav>
+
+</div>
+
+<div class="container" style="margin-top:25px;">    
+  <h3><span class="material-icons icon-1">graphic_eq</span> Global Status</h3>
+  <div class="row">
+  <div class="col-md-4 col-sm-4">
+               <div class="div1 mx-auto">
+                  <h5>Confirmed</h5>
+                   
+               </div>
+</div>
+<div class="col-md-4 col-sm-4">
+  <div class="div2 mx-auto">
+     <h5>Recovered</h5>
+      
+  </div>
+</div>
+<div class="col-md-4 col-sm-4">
+  <div class="div3 mx-auto">
+     <h5>Deaths</h5>
+      
+  </div>
+</div>
+</div>
+
+</div>
+<div class="container-fluid sec-2">
+  <div class="row">
+    <div class="col-md-12 col-lg-8" style="margin-top: 30px;">
+      <h3><span class="material-icons icon-1">search</span> Search Country Status</h3>
+      <div class="form-group">
+        <select  class="form-control" id="sel1">
+          <option value="nill">-- Select Country --</option>
+         
+        </select>
+        
+      </div>
+    <div  id="map" style=" width:100%;  height: 400px; margin-bottom: 20px;">
+    
+    </div>
+    </div>
+<div class="col-md-12  col-lg-4 "  style="margin-top: 30px;">
+ <h3> <span class="material-icons icon-1">language</span> Continents</h3> 
+ <div style="overflow-x: auto;">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Continents</th>
+        <th style="color: #ff3838;">Confirmed</th>
+        <th style="color: #27ae60;">Recovered</th>
+        <th style="color: #576574;">Deaths</th> 
+      </tr>
+    </thead>
+    <tbody class="tbl">
+     
+      
+        
+    </tbody>
+  </table>
+ </div> 
+ 
+</div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
+    <script src="https://cdn.maptiler.com/mapbox-gl-js/v1.5.1/mapbox-gl.js"></script>
+    <script src="https://cdn.maptiler.com/mapbox-gl-leaflet/latest/leaflet-mapbox-gl.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
